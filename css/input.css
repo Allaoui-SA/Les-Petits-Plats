@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply font-manrope;
+}
+h1, h2, h3 {
+    @apply font-anton;
+}
+h4 {
+    @apply uppercase text-xs;
+}
+input {
+    @apply border-none outline-none text-base;
+}
