@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500&display=swap');
 
 /*
 ! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
@@ -715,12 +715,36 @@ video {
   margin: auto;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mb-\[1px\]{
+  margin-bottom: 1px;
+}
+
 .me-3{
   margin-inline-end: 0.75rem;
 }
 
+.mt-14{
+  margin-top: 3.5rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .box-border{
@@ -729,6 +753,13 @@ video {
 
 .box-content{
   box-sizing: content-box;
+}
+
+.line-clamp-4{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .line-clamp-none{
@@ -822,6 +853,14 @@ video {
   display: none;
 }
 
+.h-64{
+  height: 16rem;
+}
+
+.h-9{
+  height: 2.25rem;
+}
+
 .h-\[667px\]{
   height: 667px;
 }
@@ -834,6 +873,14 @@ video {
   min-height: 100vh;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
+.w-40{
+  width: 10rem;
+}
+
 .w-\[this-is\\\\\]{
   width: this-is\\;
 }
@@ -844,6 +891,10 @@ video {
 
 .w-\[weird-and-invalid\]{
   width: weird-and-invalid;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-\[1440px\]{
@@ -1372,6 +1423,10 @@ video {
   justify-items: stretch;
 }
 
+.gap-12{
+  gap: 3rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1688,6 +1743,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -1720,6 +1779,11 @@ video {
 .rounded-t{
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+
+.rounded-t-3xl{
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 
 .rounded-bl{
@@ -1755,6 +1819,10 @@ video {
 }
 
 .border{
+  border-width: 1px;
+}
+
+.border-\[1px\]{
   border-width: 1px;
 }
 
@@ -1816,6 +1884,11 @@ video {
   border-style: none;
 }
 
+.border-gray-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
 .bg-\[\#ededed\]{
   --tw-bg-opacity: 1;
   background-color: rgb(237 237 237 / var(--tw-bg-opacity));
@@ -1829,6 +1902,11 @@ video {
 .bg-slate-600{
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/assets\/images\/header-bg\.png\'\)\]{
@@ -1945,6 +2023,25 @@ video {
      object-fit: scale-down;
 }
 
+.object-center{
+  -o-object-position: center;
+     object-position: center;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.px-24{
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1960,9 +2057,18 @@ video {
   padding-right: 69px;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-\[51px\]{
   padding-top: 51px;
   padding-bottom: 51px;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 
 .ps-9{
@@ -2029,14 +2135,14 @@ video {
   vertical-align: super;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm{
@@ -2044,8 +2150,17 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .font-normal{
@@ -2136,6 +2251,11 @@ video {
 .text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2483,6 +2603,10 @@ input{
   line-height: 1.5rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.recipe{
+  width: 24rem;
 }
 
 @media (min-width: 640px){

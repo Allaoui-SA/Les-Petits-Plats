@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,4 +16,7 @@ h4 {
 }
 input {
     @apply border-none outline-none text-base;
+}
+.recipe {
+    @apply w-96;
 }
