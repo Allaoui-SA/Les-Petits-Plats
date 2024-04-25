@@ -21,22 +21,7 @@
     </header>
     <main class="main px-24 py-12">
         <form class="flex justify-between">
-            <div class="dropdown--container">
-                <div class="dropdown bg-white p-4 rounded-xl flex flex-col">
-                    <span class="dropdown__title">Ingredients</span>
-                    <input type="text" class="h-9 w-40 mt-4 border-solid border-[1px] border-gray-300">
-                    <ul class="ingredients-container"></ul>
-                </div>
-                <select class="dropdown">
-                    <option value="option1">Appareils</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
-                <select class="dropdown">
-                    <option value="option1">Ustensiles</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
+            <div id="dropdowns" class="flex gap-10">
             </div>
             <h2 class="text-xl test">1500 recettes</h2>
         </form>
@@ -46,7 +31,8 @@
     </main>
     <script src="data/recipes.js"></script>
     <script src="scripts/utils/displayRecipes.js"></script>
-    <script src="scripts/utils/displayIngredientsList.js"></script>
-    <script src="scripts/utils/filterRecipes.js"></script>
+    <script src="scripts/utils/displayDropdowns.js"></script>
+    <script src="scripts/utils/getDropdowns.js"></script>
+    <script src="scripts/utils/complexFilter.js"></script>
 </body>
 </html>

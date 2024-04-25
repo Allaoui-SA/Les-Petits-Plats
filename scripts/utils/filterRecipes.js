@@ -13,7 +13,6 @@ function filterRecipesByIngredient(recipes, ingredient) {
   });
 }
 
-
 function resetRecipes() {
   const recipesContainer = document.querySelector('.main--content');
   recipesContainer.innerHTML = '';

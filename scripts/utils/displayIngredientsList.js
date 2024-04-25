@@ -1,5 +1,4 @@
 let ingredientsDropdownArray = [];
-console.log()
 function getIngredientsList(recipes) {
     recipes.forEach(recipe => {
         recipe.ingredients.forEach(item => {
@@ -21,14 +20,11 @@ function displayIngredientsList() {
     ingredientsDropdownArray.forEach(ingredient => {
         // create ingredient list items
         const ingredientList = document.createElement('li');
-        ingredientList.className = 'ingredient';
+        ingredientList.className = 'ingredient px-4 pb-3 hover:bg-[#FFD15B] hover:cursor-pointer hover:py-2 hover:mb-1 transition-all duration-300';
         ingredientList.textContent = ingredient;
         ingredientsDropdown.appendChild(ingredientList);
     });
 }
-
 getIngredientsList(recipes);
 displayIngredientsList();
-
-
 let ingredientsFilterArray = ["Ananas"];
